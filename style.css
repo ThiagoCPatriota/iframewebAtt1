@@ -4,101 +4,80 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #bebebe;
-    font-family: Arial, sans-serif;
-    height: 100vh;
-}
-
-/* Layout geral */
 .container {
     display: flex;
-    height: 100vh;
+    height: 100vh; 
+    background-color: #cccccc; /* Fundo cinza */
 }
 
-/* ===== MENU LATERAL ===== */
+/* Menu Lateral */
 .menu-lateral {
-    width: 200px;
-    min-width: 200px;
-    background-color: #000;
-    color: #fff;
-    padding: 14px 10px;
+    width: 250px;
+    background-color: #010101; 
+    color: #ffffff;
+    padding: 20px;
 }
 
 .menu-lateral h1 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 18px;
-    color: #fff;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: serif;
 }
 
-.menu-lateral nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+.menu-lateral ul {
+    list-style-type: none; 
+    background-color: #e8920a; /* Laranja */
 }
 
-.menu-lateral nav ul li a {
-    display: block;
-    background-color: #e8920a;
+.menu-lateral li {
+    border-bottom: 2px solid #000;
+    border-left: 10px solid #300C07;
+    transition: 0.3s;
+}
+
+.menu-lateral a {
     color: #000;
     text-decoration: none;
-    font-size: 0.82rem;
+    font-size: 1.1em;
     font-weight: bold;
-    padding: 5px 8px;
-    border: 1px solid #b86e00;
+    display: block;
+    padding: 10px;
 }
 
-.menu-lateral nav ul li a:hover {
-    background-color: #ffb020;
-    outline: 2px solid #fff;
+.menu-lateral li:hover {
+    background-color: #ffcc00; /* Amarelo no hover */
+    border-left: 10px solid #ff9900; 
 }
 
-/* ===== CONTEÚDO PRINCIPAL ===== */
+/* Área da Moldura */
 .conteudo-principal {
-    flex: 1;
+    flex-grow: 1; 
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: #bebebe;
+    align-items: center;
 }
 
-/* ===== MOLDURA DOURADA ===== */
 .moldura {
-    border: 6px solid #c8a500;
-    padding: 4px;
-    background-color: #c8a500;
-}
-
-.borda-interna {
+    width: 450px;
+    height: 90vh;
+    border: 5px solid #ccaa00; /* Dourado */
+    background-color: #000;
     display: flex;
     flex-direction: column;
-    width: 370px;
-    height: 630px;
-    background-color: #000;
 }
 
-/* ===== BARRA DE TÍTULO ===== */
 .barra-titulo {
     background-color: #000;
-    color: #fff;
+    color: #fff; 
     text-align: center;
-    padding: 8px 0;
-    border-bottom: 2px solid #c8a500;
+    padding: 10px;
+    border-bottom: 2px solid #ccaa00;
 }
 
-.barra-titulo h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-/* ===== IFRAME ===== */
+/* Ajuste do Iframe para preencher tudo */
 iframe {
-    flex: 1;
+    flex-grow: 1;
     border: none;
-    display: block;
-    background-color: #fff;
+    width: 100%;
+    height: 100%;
 }
-
