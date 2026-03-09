@@ -7,10 +7,9 @@
 .container {
     display: flex;
     height: 100vh; 
-    background-color: #cccccc; /* Fundo cinza */
+    background-color: #cccccc; 
 }
 
-/* Menu Lateral */
 .menu-lateral {
     width: 250px;
     background-color: #010101; 
@@ -26,7 +25,7 @@
 
 .menu-lateral ul {
     list-style-type: none; 
-    background-color: #e8920a; /* Laranja */
+    background-color: #e8920a; 
 }
 
 .menu-lateral li {
@@ -45,11 +44,10 @@
 }
 
 .menu-lateral li:hover {
-    background-color: #ffcc00; /* Amarelo no hover */
+    background-color: #ffcc00; 
     border-left: 10px solid #ff9900; 
 }
 
-/* Área da Moldura */
 .conteudo-principal {
     flex-grow: 1; 
     display: flex;
@@ -60,7 +58,7 @@
 .moldura {
     width: 450px;
     height: 90vh;
-    border: 5px solid #ccaa00; /* Dourado */
+    border: 5px solid #ccaa00; 
     background-color: #000;
     display: flex;
     flex-direction: column;
@@ -74,7 +72,6 @@
     border-bottom: 2px solid #ccaa00;
 }
 
-/* Ajuste do Iframe para preencher tudo */
 iframe {
     flex-grow: 1;
     border: none;
