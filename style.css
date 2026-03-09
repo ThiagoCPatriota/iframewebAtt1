@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #bebebe;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+/* Layout geral */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* ===== MENU LATERAL ===== */
+.menu-lateral {
+    width: 200px;
+    min-width: 200px;
+    background-color: #000;
+    color: #fff;
+    padding: 14px 10px;
+}
+
+.menu-lateral h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+    color: #fff;
+}
+
+.menu-lateral nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.menu-lateral nav ul li a {
+    display: block;
+    background-color: #e8920a;
+    color: #000;
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: bold;
+    padding: 5px 8px;
+    border: 1px solid #b86e00;
+}
+
+.menu-lateral nav ul li a:hover {
+    background-color: #ffb020;
+    outline: 2px solid #fff;
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+.conteudo-principal {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bebebe;
+}
+
+/* ===== MOLDURA DOURADA ===== */
+.moldura {
+    border: 6px solid #c8a500;
+    padding: 4px;
+    background-color: #c8a500;
+}
+
+.borda-interna {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    height: 630px;
+    background-color: #000;
+}
+
+/* ===== BARRA DE TÍTULO ===== */
+.barra-titulo {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 2px solid #c8a500;
+}
+
+.barra-titulo h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* ===== IFRAME ===== */
+iframe {
+    flex: 1;
+    border: none;
+    display: block;
+    background-color: #fff;
+}
+
